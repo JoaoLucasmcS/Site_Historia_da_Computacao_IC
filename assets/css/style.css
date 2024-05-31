@@ -1,0 +1,281 @@
+/* Cores e estilos globais */
+:root {
+    --primary-color: #27374D;
+    --secondary-color: #F9F7F7;
+    --text-color: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    position: sticky !important;
+    top: 0px !important;
+    z-index: 999 !important;
+}
+
+/* Cabeçalho */
+header button {
+    background-color: var(--secondary-color) !important;
+    margin-right: 15px;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    display: flex;
+    justify-content: center;
+    /* Centralizar horizontalmente */
+    align-items: center;
+    /* Centralizar verticalmente */
+}
+
+.navbar-toggler .navbar-toggler-icon i {
+    font-size: 1.25rem;
+    /* Ajustar o tamanho do ícone conforme necessário */
+}
+
+.header__logo {
+    margin-left: 100px;
+    max-width: 200px;
+    max-height: 80px;
+}
+
+.header__principal__nav {
+    margin-right: 100px;
+    padding: 20px;
+}
+
+.nav-link {
+    color: var(--secondary-color) !important;
+    display: flex;
+    font-family: var(--font-family);
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #000 !important;
+}
+
+/* Banner Principal */
+.banner_principal {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 650px;
+    overflow: hidden;
+}
+
+.banner_principal_img_carousel {
+    max-height: 650px !important;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 650px !important;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 85vh;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.banner_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-banner,
+.subtitulo-banner {
+    font-family: var(--font-family);
+    font-weight: 800;
+    text-shadow: 0px 0px 10px var(--shadow-color);
+    color: var(--text-color);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.titulo-banner {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-banner {
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+/* Seção História da Computação */
+.historia-computacao {
+    background-color: #fff;
+    padding-top: 106px;
+}
+
+.texto-formatado {
+    font-size: 16px;
+    font-family: var(--font-family);
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.texto-formatado h2 {
+    font-weight: 500;
+    text-align: center !important;
+    margin-bottom: 30px;
+}
+
+.texto-formatado img {
+    width: 70%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.texto-formatado figure {
+    font-size: 12px;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+/* Seção Membros da Equipe */
+.membros-equipe {
+    background-color: #27374D;
+}
+
+.membros-equipe h3 {
+    color: var(--text-color) !important;
+    padding-bottom: 2.5rem;
+    padding-top: 50px;
+}
+
+.card a {
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: 14px;
+    border-radius: 10px;
+    width: 40%;
+    padding: 10px;
+    border: none;
+}
+
+.card {
+    border: 0 !important;
+    border-radius: 20px !important;
+}
+
+.card img {
+    border-radius: 20px !important;
+    max-height: 350px;
+}
+
+.card-body {
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+}
+
+.membros__equipes__item__captions_span,
+.membros__equipes__item__captions_b {
+    padding: 14px;
+}
+
+.membros-equipe a:hover {
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+.footer {
+    background-color: #f2f2f2;
+    padding: 4rem 0;
+}
+
+form div {
+    padding-bottom: 20px;
+}
+
+form button {
+    width: 10%;
+    height: auto;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.copyright p {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+form div {
+    padding-bottom: 20px;
+}
+
+form button {
+    width: 10%;
+    height: auto;
+}
+
+/* Responsividade */
+@media screen and (max-width: 900px) {
+    .titulo-banner {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .subtitulo-banner {
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+
+    .header__logo {
+        margin-left: 10px;
+    }
+
+    .texto-formatado {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .texto-formatado h2 {
+        font-size: 20px;
+    }
+
+    .section__banner {
+        margin: 0 auto;
+    }
+
+    form button {
+        width: 30%;
+    }
+}
